@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Default styles for larger screens */
+        /* Add your regular styles here */
+
+        @media only screen and (max-width: 480px) {
+            /* Styles for screens with a maximum width of 480 pixels */
+            body {
+                transform: scale(0.8); /* Adjust the scale factor as needed */
+                transform-origin: top left;
+            }
+
+            /* Adjust styles to rotate and fill the screen with widgets */
+            .livecoinwatch-widget-6 {
+                width: 100vh; /* Use viewport height for width to fill the screen */
+                height: 100vw; /* Use viewport width for height to fill the screen */
+                transform: rotate(90deg); /* Rotate the widgets */
+                transform-origin: top left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+    <div class="livecoinwatch-widget-6" lcw-coin="BTC" lcw-base="EUR" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-bg="#1f2434" lcw-border-w="1"></div>
+
+    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+    <div class="livecoinwatch-widget-6" lcw-coin="ETH" lcw-base="EUR" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-bg="#1f2434" lcw-border-w="1"></div>
+
+    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+    <div class="livecoinwatch-widget-6" lcw-coin="XRP" lcw-base="EUR" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-bg="#1f2434" lcw-border-w="1"></div>
+    <!-- Your website content goes here -->
+</body>
+</html>
