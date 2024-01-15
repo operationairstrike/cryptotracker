@@ -24,12 +24,12 @@
             /* Adjust styles to rotate and fill the screen with widgets */
             .widget-container {
                 position: fixed;
-                top: 0;
-                left: 0;
+                top: 50%; /* Adjust as needed */
+                left: 50%; /* Adjust as needed */
+                transform: translate(-50%, -50%) rotate(90deg); /* Rotate and center the widgets */
+                transform-origin: center center;
                 width: 100vh; /* Use viewport height for width to fill the screen */
                 height: 100vw; /* Use viewport width for height to fill the screen */
-                transform: rotate(90deg); /* Rotate the widgets */
-                transform-origin: top left;
             }
 
             .livecoinwatch-widget-6 {
